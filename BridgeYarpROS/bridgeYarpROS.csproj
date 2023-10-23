@@ -1,0 +1,143 @@
+﻿<!--<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{563C7FF0-ECF2-4008-8FDC-04F898CCB280}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>bridgeYarpROS</RootNamespace>
+    <AssemblyName>bridgeYarpROS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YarpManagerCS">
+      <HintPath>..\YarpManagerCS\bin\Release\net462\YarpManagerCS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Uml.Robotics.Ros">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Uml.Robotics.Ros.MessageBase">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Uml.Robotics.Ros.Messages">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net462</TargetFrameworks>
+		<RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+		<ApplicationIcon />
+		<OutputType>Exe</OutputType>
+		<StartupObject />
+		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1'">
+		<DefineConstants>NETCORE</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net462'">
+		<DefineConstants>NET462</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net462|AnyCPU'">
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <Prefer32Bit>true</Prefer32Bit>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net462|AnyCPU'">
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <Prefer32Bit>true</Prefer32Bit>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="System.Diagnostics.TextWriterTraceListener" Version="4.3.0" />
+		<PackageReference Include="System.Diagnostics.TraceSource " Version="4.3.0" />
+		<PackageReference Include="YarpManagerCS" Version="1.0.0" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Reference Include="ComUtils">
+	    <HintPath>..\SENSE\bin\Debug\net462\ComUtils.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging">
+	    <HintPath>Microsoft.Extensions.Logging.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+	    <HintPath>Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging.Configuration">
+	    <HintPath>Microsoft.Extensions.Logging.Configuration.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging.Console">
+	    <HintPath>Microsoft.Extensions.Logging.Console.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Extensions.Logging.Debug">
+	    <HintPath>Microsoft.Extensions.Logging.Debug.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Sense.Lib.FACELibrary">
+	    <HintPath>..\..\PLAN\Sense.Lib.FACELibrary.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Uml.Robotics.Ros">
+	    <HintPath>yarpCS lib vecchie\Uml.Robotics.Ros.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Uml.Robotics.Ros.MessageBase">
+	    <HintPath>Uml.Robotics.Ros.MessageBase.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Uml.Robotics.Ros.Messages">
+	    <HintPath>Uml.Robotics.Ros.Messages.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Uml.Robotics.XmlRpc">
+	    <HintPath>Uml.Robotics.XmlRpc.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

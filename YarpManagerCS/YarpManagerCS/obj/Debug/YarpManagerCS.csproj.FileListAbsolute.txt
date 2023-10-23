@@ -1,0 +1,15 @@
+D:\GIT_Repository\CommunicationSystem\YarpManagerCS\YarpManagerCS\obj\Debug\YarpManagerCS.csprojResolveAssemblyReference.cache
+D:\GIT_Repository\bin\Debug\YarpManagerCS.dll
+D:\GIT_Repository\bin\Debug\YarpManagerCS.pdb
+D:\GIT_Repository\CommunicationSystem\YarpManagerCS\YarpManagerCS\obj\Debug\YarpManagerCS.dll
+D:\GIT_Repository\CommunicationSystem\YarpManagerCS\YarpManagerCS\obj\Debug\YarpManagerCS.pdb
+C:\Users\FACE\Desktop\Repository GIT\bin\Debug\YarpManagerCS.dll
+C:\Users\FACE\Desktop\Repository GIT\bin\Debug\YarpManagerCS.pdb
+C:\Users\FACE\Desktop\Repository GIT\CommunicationSystem\YarpManagerCS\YarpManagerCS\obj\Debug\YarpManagerCS.dll
+C:\Users\FACE\Desktop\Repository GIT\CommunicationSystem\YarpManagerCS\YarpManagerCS\obj\Debug\YarpManagerCS.pdb
+C:\Users\FACE\Desktop\Repository GIT\CommunicationSystem\YarpManagerCS\YarpManagerCS\obj\Debug\YarpManagerCS.csprojResolveAssemblyReference.cache
+C:\Users\Face\Desktop\FACE(not git)\bin\Debug\YarpManagerCS.dll
+C:\Users\Face\Desktop\FACE(not git)\bin\Debug\YarpManagerCS.pdb
+C:\Users\Face\Desktop\FACE(not git)\CommunicationSystem\YarpManagedCS\YarpManagerCS\obj\Debug\YarpManagerCS.csprojResolveAssemblyReference.cache
+C:\Users\Face\Desktop\FACE(not git)\CommunicationSystem\YarpManagedCS\YarpManagerCS\obj\Debug\YarpManagerCS.dll
+C:\Users\Face\Desktop\FACE(not git)\CommunicationSystem\YarpManagedCS\YarpManagerCS\obj\Debug\YarpManagerCS.pdb

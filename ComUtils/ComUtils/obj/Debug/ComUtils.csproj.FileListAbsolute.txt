@@ -1,0 +1,5 @@
+C:\Users\FACE\Desktop\Repository GIT\bin\Debug\ComUtils.dll
+C:\Users\FACE\Desktop\Repository GIT\bin\Debug\ComUtils.pdb
+C:\Users\FACE\Desktop\Repository GIT\CommunicationSystem\ComUtils\ComUtils\obj\Debug\ComUtils.csprojResolveAssemblyReference.cache
+C:\Users\FACE\Desktop\Repository GIT\CommunicationSystem\ComUtils\ComUtils\obj\Debug\ComUtils.dll
+C:\Users\FACE\Desktop\Repository GIT\CommunicationSystem\ComUtils\ComUtils\obj\Debug\ComUtils.pdb
